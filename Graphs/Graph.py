@@ -28,7 +28,6 @@ class Graph:
             for edge in self.adjacent(origin):
                 if(not(edge.value in marked)): # Was not previously visited so add to queue
                     q.put(edge.value)
-
                 if(edge.value in marked): # Node has been visited
                     if(edge.isConflict): # Check if node is opposite colour 
                         if((origin in coloured and edge.value in coloured) or 
