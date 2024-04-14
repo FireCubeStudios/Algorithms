@@ -1,7 +1,7 @@
-from FlightBoard import FlightBoard
+from FlightBoard import *
 
 flights, operations = map(int, input().split())
-Board = FlightBoard()
+Board = TableFlightBoard()
 
 # Add Flights to FlightBoard
 for _ in range(flights):

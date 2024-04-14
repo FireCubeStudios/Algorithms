@@ -13,4 +13,4 @@ class Flight:
     # Convert seconds to a time string 00:00:00
     @staticmethod
     def convertToString(seconds: int) -> str: 
-        return f'{(seconds // 3600)}:{(seconds % 3600) // 60}:{(seconds % 3600) % 60}'
+        return f'{(seconds // 3600):02}:{(seconds % 3600) // 60:02}:{(seconds % 3600) % 60:02}'
